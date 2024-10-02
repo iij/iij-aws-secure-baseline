@@ -24,14 +24,14 @@ $ git clone https://github.com/iij/iij-aws-secure-baseline
 
 ### 3. スクリプト実行
 
-1. cd でディレクトリ iij-aws-secure-baseline/enable-Inspector-all-regions/ へ移動します。
-2. enable-Inspector-all-regions.sh を実行します。
+1. cd でディレクトリ iij-aws-secure-baseline/enable-inspector-all-regions/ へ移動します。
+2. enable-inspector-all-regions.sh を実行します。
 
 ```sh
-$ cd iij-aws-secure-baseline/enable-Inspector-all-regions/
-$ ./enable-Inspector-all-regions.sh
+$ cd iij-aws-secure-baseline/enable-inspector-all-regions/
+$ ./enable-inspector-all-regions.sh
 # 以下のINFOメッセージが表示されれば実行終了です。
-2022-09-20T03:08:27 [INFO] (enable-Inspector-all-regions.sh:117:main) 全リージョンのAmazon Inspectorを有効化 正常終了
+2022-09-20T03:08:27 [INFO] (enable-inspector-all-regions.sh:117:main) 全リージョンのAmazon Inspectorを有効化 正常終了
 ```
 
 ### 4. ログ確認
@@ -39,7 +39,7 @@ $ ./enable-Inspector-all-regions.sh
 - エラーが発生していないか、ログを確認します。
 
 ```sh
-$ grep ERROR enable-Inspector-all-regions.log
+$ grep ERROR enable-inspector-all-regions.log
 $ # ERRORメッセージがヒットしなければ正常です。
 ```
 
